@@ -69,7 +69,7 @@ def retweet_favorite_follow():
             if mention['sender_id'] != me:
                 try:
                     #Reply to mention:
-                    api.update_status(f"Thanks for the mention, @{mention['sender_sn']}. I'm just a bot, so check out my creator @jheeeeezy! Follow us! - {id_generator()}", mention['mention_id'])
+                    api.update_status(f"Thanks for the mention, @{mention['sender_sn']}.", mention['mention_id'])
                     api.create_favorite(mention['mention_id'])
                     api.retweet(mention['mention_id'])
                     print(f"Retweeted and favorited {mention['mention_id']}")
