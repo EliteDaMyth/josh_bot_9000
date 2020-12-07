@@ -270,7 +270,6 @@ if __name__ == "__main__":
         print("////-------Medium Rest Period-------////")
         get(url)
         med_wait.med_wait()
-        TwitterBot.follow_back()
         print('┳━┳ ヽ(ಠل͜ಠ)ﾉ')
         print("////-------Medium Rest Period-------////")
         get(url)
