@@ -31,7 +31,7 @@ def find_trending_topics_in_usa():
         #pass
     trending_topic_list = []
     try:
-        usa = api.trends_place(23424977)  #USA = 23424977
+        usa = api.trends_place(23424848)  #USA = 23424977
         for trend_list in usa:
             for (k,v) in trend_list.items():
                 for event in v:
